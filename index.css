@@ -1,0 +1,186 @@
+/* GENERAL STYLES */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: "Inter";
+}
+
+/* HEADER */
+header {
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+/* NAV */
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-image: url(./images/header.png);
+    background-size: cover;
+    background-color: #1A1919;
+    height: 100%;
+    background-position: 20% 40%;
+}
+
+/* FORM */
+.search-bar {
+    display: flex;
+    top: -1.25em;
+    position: relative;
+    width: 50vw;
+    margin: 0 auto;
+    height: 50px;
+    border: 2px solid #D1D5DB;
+    border-radius: 5px;
+    background-color: white;
+}
+
+.fa-search {
+    width: 40px;
+    text-align: center;
+    align-self: center;
+    font-size: 20px;
+    color: gray;
+    margin-right: .25em
+}
+
+.search-bar input {
+    border: none;
+    width: 80%;
+    outline: none;
+}
+
+.search-btn {
+    border: none;
+    background-color: #F9FAFB;
+    width: 20%;
+    cursor: pointer;
+}
+
+/* MOVIE CONTAINER */
+.movie-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.movie {
+    display: flex;
+    width: 50vw;
+    margin: 2rem 0 ;
+}
+
+.movie-img {
+    width: 200px;
+    margin-right: 2rem;
+}
+
+.movie-item-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.movie-header-container {
+    display: flex;
+    align-items: center;
+}
+
+.movie-details-container {
+    display: flex;
+}
+
+.loading-container,
+.no-movies-found-container,
+.watchlist-text,
+.placeholder {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 570px;
+    color: #DFDDDD;
+}
+
+/* TYPOGRAPHY */
+.title {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 20px;
+    max-width: 500px;
+}
+
+.loading-icon {
+    height: 100px;
+    width: 100px;
+}
+
+.rating,
+.runtime,
+.genre,
+.watchlist-btn {
+    color: #111827;
+    margin-right: 2rem;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.watchlist-btn {
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.plot {
+    color: #111827;
+    margin-right: 2rem;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.fa-film {
+    font-size: 150px;
+}
+
+.text {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 20px;
+}
+
+.movie-link,
+.watchlist-link {
+    text-decoration: none;
+    color: white;
+}
+
+.link {
+    text-decoration: none;
+    color: #363636;
+    font-weight: 700;
+    line-height: 20px;
+    font-size: 20px;
+}
+
+.fa-star {
+    color: goldenrod;
+    font-size: 18px;
+    margin: 0 .25rem 0 .5rem;
+}
+
+.no-movies-found-container p,
+.watchlist-text p {
+    font-weight: 700;
+    line-height: 28.5px;
+    font-size: 28px;
+}
