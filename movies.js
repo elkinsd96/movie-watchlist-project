@@ -172,7 +172,7 @@ function loadingScreen() {
     let loadingHtml = ""
     loadingHtml +=  `
         <div class="loading-container">
-            <img class="loading-icon" src="images/loadingIcon.gif">
+            <img class="loading-icon" src="./images/loadingIcon.gif">
             <p class="loading-text">Give us a moment as we search for your movie</p>
         </div>
     `
