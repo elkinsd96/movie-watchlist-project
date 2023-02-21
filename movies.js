@@ -10,7 +10,7 @@ export async function searchMovie(movieSearch) {
     getLocaLStorage()
     loadingScreen()
     setTimeout(async () => {
-        const resp = await fetch(`http://www.omdbapi.com/?apikey=9dd16ffd&s="${movieSearch}"&type="movie"`)
+        const resp = await fetch(`https://www.omdbapi.com/?apikey=9dd16ffd&s="${movieSearch}"&type="movie"`)
         const data = await resp.json()
         if (!data.Search) {
             const movieNotFoundHtml = `
@@ -30,7 +30,7 @@ export async function searchMovie(movieSearch) {
 export async function getMovieById(movieIdArray) {
     const movieArray = []
     for(const movieId of movieIdArray){
-        const resp = await fetch(`http://www.omdbapi.com/?apikey=9dd16ffd&i=${movieId}`)
+        const resp = await fetch(`https://www.omdbapi.com/?apikey=9dd16ffd&i=${movieId}`)
         const data = await resp.json()
         movieArray.push(data)
         }
