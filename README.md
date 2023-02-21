@@ -2,9 +2,9 @@
 
 Movie Watchlist Project from [Scrimba](https://scrimba.com/learn/frontend)'s Working With APIs module.
 
-## Project Link
+## Project Link 
 
-[Project Link]  Hosted using Netlify 
+[Project Link] https://movie-watchlist-project.netlify.app/ Hosted using Netlify 
 
 ## Previews
 
